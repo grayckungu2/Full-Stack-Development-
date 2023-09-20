@@ -1,6 +1,5 @@
 ##
-The flask backend  application  is a Movie Review system.  It uses SQLAlchemy as an ORM to define and manage the database models.
-
+The flask backend  application  is a Movie Review system. 
 our application has the following functionalities  
 
 ## User Management:
