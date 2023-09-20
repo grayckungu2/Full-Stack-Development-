@@ -14,9 +14,11 @@ our application has the following functionalities
    - PUT `/reviews/<review_id>`: Updates an existing review.
    - DELETE `/reviews/<review_id>`: Deletes an existing review.
 ## Movie management
-PUT '/movies/<int:movie_id>' : update_movie`first retrieves the movie ID from the URL parameter. It then gets the JSON data from the request body, which contains the updated movie information such as title, release date, genre, director, and description.
-. Next, we use  queries the database to find the movie with the given ID. If the movie exists, it updates its attributes with the new values from the JSON data. Finally, it commits the changes to the database and returns a JSON response indicating the success of the update operation.
- DELETE `/movies/<movie_id  It retrieves the movie ID from the URL parameter and queries the database to find the movie. If the movie exists, it deletes it from the database and commits the changes. The function then returns a JSON response indicating the success of the delete operation.
+PUT '/movies/<int:movie_id>' : update_movie
+_first  we retrieve the movie ID from the URL parameter. After that we get the JSON data from the request body, which contains the updated movie information such as title, release date, genre, director, and description.
+_ lastly we use  queries the database to find the movie with the particular ID. If the movie exists, it updates its attributes with the new values from the JSON data. Finally, changes are committed  to the database and returns a JSON response indicating the success of the update operation.
+ DELETE `/movies/<movie_id  
+ _It retrieves the movie ID from the URL parameter and queries the database to find the movie. If the movie exists, it deletes it from the database and commits the changes. This  function will later returns a JSON response indicating the success of the delete operation.
 
 ## The relationships between the models are as follows:
 - Each User can have multiple Reviews (one-to-many relationship).
